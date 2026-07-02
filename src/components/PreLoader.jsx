@@ -35,7 +35,7 @@ const PreLoader = () => {
         }`}
       >
         <Aurora
-          colorStops={["#577870", "#1F97A6", "#127B99"]}
+          colorStops={["#22201D", "#5A3D28", "#B17A55"]}
           blend={0.5}
           amplitude={1.0}
           speed={0.5}

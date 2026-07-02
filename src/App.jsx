@@ -10,9 +10,9 @@ import { listTools, listProyek } from "./data";
 import ChromaGrid from "./components/ChromaGrid/ChromaGrid";
 import ProjectModal from "./components/ProjectModal/ProjectModal"; // <-- IMPORT MODAL
 import Aurora from "./components/Aurora/Aurora";
-import AOS from 'aos';
-import ChatRoom from "./components/ChatRoom";
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+// import ChatRoom from "./components/ChatRoom";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
@@ -50,7 +50,7 @@ function App() {
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (aboutRef.current) {
@@ -64,64 +64,88 @@ function App() {
     <>
       <div className="absolute top-0 left-0 w-full h-full -z-10 ">
         <Aurora
-          colorStops={["#577870", "#1F97A6", "#127B99"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={0.5}
+          colorStops={["#050505", "#111111", "#5E4128"]}
+          blend={0.35}
+          amplitude={0.7}
+          speed={0.25}
         />
       </div>
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
+      <main className="w-full max-w-[1100px] mx-auto px-5 sm:px-8 lg:px-10">
+        <div className=" hero grid grid-cols-1 lg:grid-cols-2 items-center gap-14 lg:gap-20 pt-14 min-h-[85vh]">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
-            <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/faris1.png" className="w-10 rounded-md" />
-              <q>Avoid or just undertake it</q>
+            <div className="flex flex-wrap gap-4 items-center mb-6 bg bg-[#111111] border border-[#C68B59]/20 backdrop-blur-md w-fit p-4 rounded-2xl">
+              <img src="./assets/fahrezy.jpeg" className="w-10 rounded-md" />
+              <q>Turning ideas into scalable web solutions.</q>
             </div>
-            <h1 className="text-5xl font-bold mb-6">
-              <ShinyText text="Hi I'm Faris Edrik Prayoga" disabled={false} speed={3} className='custom-class' />
+            <h1 className="mb-8 whitespace-nowrap">
+              <ShinyText
+                text="Fahrezy Purba"
+                disabled={false}
+                speed={3}
+                className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#E7C29B]"
+              />
             </h1>
             <BlurText
-              text="A passionate application and web developer dedicated to crafting modern, high-performance digital experiences through innovative and user-friendly solutions."
+              text="Fullstack Web Developer specializing in Laravel, PHP, MySQL, and modern web technologies. Passionate about building business systems, company websites, and digital solutions that create real impact."
               delay={150}
               animateBy="words"
               direction="top"
-              className=" mb-6"
+              className="max-w-xl text-lg leading-8 text-zinc-300 mb-8"
             />
-            <div className="flex items-center sm:gap-4 gap-2">
-              <a 
-                href="./assets/CV.pdf" 
-                download="Faris_Edrik_Prayoga_CV.pdf" 
-                className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href="./assets/CV.pdf"
+                download="Fahrezy_A_D_Romero_Purba_CV.pdf"
+                className="font-semibold bg-[#111111] p-4 px-6 rounded-full border border-[#C68B59]/30 hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)] hover:bg-[#222] transition-colors"
               >
-                <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
+                <ShinyText
+                  text="Download CV"
+                  disabled={false}
+                  speed={3}
+                  className="custom-class"
+                />
               </a>
 
-              <a href="#project" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors">
-                <ShinyText text="Explore My Projects" disabled={false} speed={3} className="custom-class" />
+              <a
+                href="#project"
+                className="font-semibold bg-[#111111] p-4 px-6 rounded-full border border-[#C68B59]/30 hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)] hover:bg-[#222] transition-colors"
+              >
+                <ShinyText
+                  text="Explore My Projects"
+                  disabled={false}
+                  speed={3}
+                  className="custom-class"
+                />
               </a>
             </div>
-
           </div>
-          <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
+          <div className="flex justify-center lg:justify-end animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
-              name="Faris Edrik P"
+              name="Fahrezy Purba"
               title="Web Developer"
-              handle="farisedrikp"
+              handle="fahrezy"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="./assets/faris.png"
+              avatarUrl="./assets/fahrezy1.jpeg"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
-              onContactClick={() => console.log('Contact clicked')}
+              onContactClick={() => console.log("Contact clicked")}
             />
           </div>
         </div>
         {/* tentang */}
-        <div className="mt-15 mx-auto w-full max-w-[1600px] rounded-3xl border-[5px] border-violet-500/40 shadow-[0_0_30px_rgba(168,85,247,0.4)] bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] p-6" id="about">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 pt-0 px-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-            <div className="basis-full md:basis-7/12 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-violet-500/30">
+        <div
+          className="mt-15 mx-auto w-full max-w-[1600px] rounded-3xl border-[5px] border-[#C68B59]/40 shadow-[0_0_50px_rgba(212,163,115,0.25)] bg-gradient-to-br from-[#0A0A0A] via-[#121212] to-[#1B1713] p-6"
+          id="about"
+        >
+          <div
+            className="flex flex-col lg:flex-row items-center gap-14 pt-0 px-6 lg:px-8"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <div className="basis-full md:basis-7/12 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-[#C68B59]/30 hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)]">
               {/* Kolom kiri */}
               <div className="flex-1 text-left">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
@@ -129,7 +153,7 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="I’m Faris Edrik Prayoga, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working with the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
+                  text="I am a Fullstack Web Developer with experience developing internal business systems and company websites using Laravel, MySQL, and JavaScript. I have worked on dashboard development, reporting systems, prospect management, and website optimization to support business operations."
                   delay={150}
                   animateBy="words"
                   direction="top"
@@ -139,30 +163,34 @@ function App() {
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      20<span className="text-violet-500">+</span>
+                      4<span className="text-[#C68B59]">+</span>
                     </h1>
                     <p>Project Finished</p>
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3<span className="text-violet-500">+</span>
+                      1<span className="text-[#C68B59]">+</span>
                     </h1>
                     <p>Years of Experience</p>
                   </div>
-                  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="600"
+                    data-aos-once="true"
+                  >
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3.81<span className="text-violet-500">/4.00</span>
+                      3.66<span className="text-[#C68B59]">/4.00</span>
                     </h1>
                     <p>GPA</p>
                   </div>
                 </div>
 
-
                 <ShinyText
                   text="Working with heart, creating with mind."
                   disabled={false}
                   speed={3}
-                  className="text-sm md:text-base text-violet-400"
+                  className="text-sm md:text-base text-[#D4A373]"
                 />
               </div>
             </div>
@@ -172,22 +200,39 @@ function App() {
               <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
             </div>
           </div>
-
         </div>
         <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >Tools & Technologies</h1>
-          <p className="w-2/5 text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">My Profesional Skills</p>
+          <h1
+            className="text-4xl/snug font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Tools & Technologies
+          </h1>
+          <p
+            className="max-w-xl text-base leading-8 opacity-50"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
+            My Profesional Skills
+          </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-
             {listTools.map((tool) => (
               <div
-                key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad} data-aos-once="true"
-                className="flex items-center gap-4 p-4 border border-zinc-700 rounded-xl bg-zinc-900/60 backdrop-blur-md hover:bg-zinc-800/80 transition-all duration-300 group shadow-lg"
+                key={tool.id}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={tool.dad}
+                data-aos-once="true"
+                className="flex items-center gap-4 p-4 border border-[#C68B59]/20 hover:border-[#C68B59]/40 rounded-xl bg-[#111111]/80 backdrop-blur-md hover:bg-[#141414]/80 transition-all duration-300 group shadow-lg"
               >
                 <img
                   src={tool.gambar}
                   alt="Tools Image"
-                  className="w-16 h-16 object-contain bg-zinc-800 p-2 rounded-lg group-hover:bg-zinc-900 transition-all duration-300"
+                  className="w-16 h-16 object-contain bg-[#141414] p-2 rounded-lg group-hover:bg-zinc-900 transition-all duration-300"
                 />
                 <div className="flex flex-col overflow-hidden">
                   <div className="truncate">
@@ -207,29 +252,60 @@ function App() {
         {/* tentang */}
 
         {/* Proyek */}
-        <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
-        <div className="proyek-box mt-14" >
-
-          <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
-            <ChromaGrid
-              items={listProyek}
-              onItemClick={handleProjectClick} // Kirim fungsi untuk handle klik
-              radius={500}
-              damping={0.45}
-              fadeOut={0.6}
-              ease="power3.out"
-            />
+        <div
+          className="proyek mt-32 py-10"
+          id="project"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        ></div>
+        <h1
+          className="text-center text-4xl font-bold mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Project
+        </h1>
+        <p
+          className="text-base/loose text-center opacity-50"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
+          Showcasing a selection of projects that reflect my skills, creativity,
+          and passion for building meaningful digital experiences.
+        </p>
+        <div className="kontak mt-24 lg:mt-32 px-4" id="contact">
+          <div className="proyek-box mt-14 max-w-[1200px] mx-auto">
+            <div
+              style={{ height: "auto", position: "relative" }}
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              data-aos-once="true"
+            >
+              <ChromaGrid
+                items={listProyek}
+                onItemClick={handleProjectClick} // Kirim fungsi untuk handle klik
+                radius={500}
+                damping={0.45}
+                fadeOut={0.6}
+                ease="power3.out"
+              />
+            </div>
           </div>
         </div>
         {/* Proyek */}
 
-
         {/* Kontak */}
-        <div className="kontak mt-32 sm:p-10 p-0" id="contact">
+        <div
+          className="kontak mt-24 lg:mt-32 px-4 sm:px-6 lg:px-0"
+          id="contact"
+        >
           <h1
-            className="text-4xl mb-2 font-bold text-center"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
@@ -237,7 +313,7 @@ function App() {
             Contact & Chat
           </h1>
           <p
-            className="text-base/loose text-center mb-10 opacity-50"
+            className="max-w-2xl mx-auto text-base leading-8 opacity-60"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -247,18 +323,16 @@ function App() {
           </p>
 
           {/* Container dua kolom */}
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Chat Room di kiri */}
-            <div className="flex-1 bg-zinc-800 p-6 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
-              <ChatRoom />
-            </div>
+            <div className="text-center">Chat Room Disabled</div>
 
             {/* Contact Form di kanan */}
             <div className="flex-1">
               <form
-                action="https://formsubmit.co/rissoppa21@gmail.com"
+                action="https://formsubmit.co/fahrezyromeropurba@gmail.com"
                 method="POST"
-                className="bg-zinc-800 p-10 w-full rounded-md"
+                className="w-full rounded-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10"
                 autoComplete="off"
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -272,7 +346,7 @@ function App() {
                       type="text"
                       name="Name"
                       placeholder="Input Name..."
-                      className="border border-zinc-500 p-2 rounded-md"
+                      className="w-full roundew-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none focus:border-[#D4A373] transitiond-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10"
                       required
                     />
                   </div>
@@ -282,17 +356,19 @@ function App() {
                       type="email"
                       name="Email"
                       placeholder="Input Email..."
-                      className="border border-zinc-500 p-2 rounded-md"
+                      className="w-full roundew-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none focus:border-[#D4A373] transitiond-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10"
                       required
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-semibold">Message</label>
+                    <label htmlFor="message" className="font-semibold">
+                      Message
+                    </label>
                     <textarea
                       name="message"
                       id="message"
                       cols="45"
-                      rows="7"
+                      rows="6"
                       placeholder="Message..."
                       className="border border-zinc-500 p-2 rounded-md"
                       required
@@ -301,9 +377,14 @@ function App() {
                   <div className="text-center">
                     <button
                       type="submit"
-                      className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full w-full cursor-pointer border border-gray-700 hover:bg-[#222] transition-colors"
+                      className="font-semibold bg-[#111111] p-4 px-6 rounded-full w-full cursor-pointer border border-[#C68B59]/30 hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)] hover:bg-[#222] transition-colors hover:scale-[1.02] active:scale-95 duration-300"
                     >
-                      <ShinyText text="Send" disabled={false} speed={3} className="custom-class" />
+                      <ShinyText
+                        text="Send"
+                        disabled={false}
+                        speed={3}
+                        className="custom-class"
+                      />
                     </button>
                   </div>
                 </div>
@@ -320,7 +401,7 @@ function App() {
         project={selectedProject}
       />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
