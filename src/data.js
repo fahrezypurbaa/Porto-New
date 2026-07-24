@@ -149,10 +149,23 @@ export const listProyek = [
     url: "https://intansafetyk3.com",
     dad: "200",
   },
-
+  
   {
     id: 3,
     image: Proyek3,
+    title: "RFurniture Company Profile",
+    subtitle:
+      "Modern company profile website showcasing products and business information.",
+    fullDescription:
+      "Built a responsive website for RFurniture with an emphasis on product presentation, company branding, and user experience across desktop and mobile devices.",
+    borderColor: "#8B6B3D",
+    gradient: "linear-gradient(145deg,#8B6B3D,#000)",
+    url: "https://github.com/fahrezypurbaa/rfurniture",
+    dad: "300",
+  },
+  {
+    id: 4,
+    image: Proyek4,
     title: "Hiradecon Landing Page",
     subtitle:
       "Responsive business landing page focused on lead generation and branding.",
@@ -161,22 +174,9 @@ export const listProyek = [
     borderColor: "#8B6B3D",
     gradient: "linear-gradient(145deg,#8B6B3D,#000)",
     url: "https://github.com/fahrezypurbaa/hiradecon",
-    dad: "300",
-  },
-
-  {
-    id: 4,
-    image: Proyek4,
-    title: "RFurniture Company Profile",
-    subtitle:
-      "Modern company profile website showcasing products and business information.",
-    fullDescription:
-      "Built a responsive website for RFurniture with an emphasis on product presentation, company branding, and user experience across desktop and mobile devices.",
-    borderColor: "#8B6B3D",
-    gradient: "linear-gradient(145deg,#8B6B3D,#000)",
-    url: "https://rfurniture.id",
     dad: "400",
   },
+
 
   
   {
@@ -190,7 +190,7 @@ export const listProyek = [
     borderColor: "#8B6B3D",
     gradient: "linear-gradient(145deg,#8B6B3D,#000)",
     url: "https://github.com/fahrezypurbaa/terrariumnew",
-    dad: "600",
+    dad: "500",
   },
   {
     id: 6,
@@ -203,6 +203,6 @@ export const listProyek = [
     borderColor: "#8B6B3D",
     gradient: "linear-gradient(145deg,#8B6B3D,#000)",
     url: "https://github.com/fahrezypurbaa/Skripsi",
-    dad: "500",
+    dad: "600",
   },
 ];
