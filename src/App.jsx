@@ -300,100 +300,151 @@ function App() {
         </div>
         {/* Proyek */}
 
-        {/* Kontak */}
+        {/* Contact */}
         <div
           className="kontak mt-24 lg:mt-32 px-4 sm:px-6 lg:px-0"
           id="contact"
         >
-          <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            Contact & Chat
-          </h1>
-          <p
-            className="max-w-2xl mx-auto text-base leading-8 opacity-60"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-            data-aos-once="true"
-          >
-            Get in touch with me or chat in real-time
-          </p>
+          {/* Heading */}
+          <div className="text-center mb-16">
+            <h1
+              className="text-3xl md:text-4xl lg:text-5xl font-bold"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              Let's Work Together
+            </h1>
 
-          {/* Container dua kolom */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            {/* Chat Room di kiri */}
-            <div className="text-center">Chat Room Disabled</div>
+            <p
+              className="max-w-2xl mx-auto mt-5 text-base leading-8 text-zinc-400"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
+              Whether you have a project, collaboration, or job opportunity,
+              feel free to reach out. I'll get back to you as soon as possible.
+            </p>
+          </div>
 
-            {/* Contact Form di kanan */}
-            <div className="flex-1">
-              <form
-                action="https://formsubmit.co/fahrezyromeropurba@gmail.com"
-                method="POST"
-                className="w-full rounded-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10"
-                autoComplete="off"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-                data-aos-once="true"
-              >
-                <div className="flex flex-col gap-6">
-                  <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Full Name</label>
-                    <input
-                      type="text"
-                      name="Name"
-                      placeholder="Input Name..."
-                      className="w-full roundew-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none focus:border-[#D4A373] transitiond-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10"
-                      required
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Email</label>
-                    <input
-                      type="email"
-                      name="Email"
-                      placeholder="Input Email..."
-                      className="w-full roundew-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none focus:border-[#D4A373] transitiond-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10"
-                      required
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-semibold">
-                      Message
-                    </label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      cols="45"
-                      rows="6"
-                      placeholder="Message..."
-                      className="border border-zinc-500 p-2 rounded-md"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="text-center">
-                    <button
-                      type="submit"
-                      className="font-semibold bg-[#111111] p-4 px-6 rounded-full w-full cursor-pointer border border-[#C68B59]/30 hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)] hover:bg-[#222] transition-colors hover:scale-[1.02] active:scale-95 duration-300"
-                    >
-                      <ShinyText
-                        text="Send"
-                        disabled={false}
-                        speed={3}
-                        className="custom-class"
-                      />
-                    </button>
-                  </div>
+          {/* Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            {/* Left Card */}
+            <div
+              className="rounded-2xl bg-[#141414] border border-[#C68B59]/20 p-8 lg:p-10 h-full"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <span className="text-[#C68B59] uppercase tracking-[3px] text-sm font-semibold">
+                CONTACT
+              </span>
+
+              <h2 className="text-3xl font-bold mt-4">Get In Touch</h2>
+
+              <p className="text-zinc-400 leading-8 mt-6">
+                I'm always open to discussing new projects, creative ideas,
+                freelance work, or full-time opportunities. Let's build
+                something meaningful together.
+              </p>
+
+              <div className="mt-10 space-y-7">
+                <div>
+                  <p className="text-[#C68B59] text-sm uppercase tracking-wider">
+                    Email
+                  </p>
+
+                  <a
+                    href="mailto:fahrezyromeropurba@gmail.com"
+                    className="mt-1 inline-block hover:text-[#D4A373] transition-all duration-300 hover:translate-x-1"
+                  >
+                    fahrezyromeropurba@gmail.com
+                  </a>
                 </div>
-              </form>
+
+                <div>
+                  <p className="text-[#C68B59] text-sm uppercase tracking-wider">
+                    WhatsApp
+                  </p>
+
+                  <a
+                    href="https://wa.me/6281268044470?text=Hi%20Fahrezy,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-block hover:text-[#D4A373] transition-all duration-300 hover:translate-x-1"
+                  >
+                    +62 812-6804-4470
+                  </a>
+                </div>
+
+                <div>
+                  <p className="text-[#C68B59] text-sm uppercase tracking-wider">
+                    Location
+                  </p>
+                  <p className="mt-1">Yogyakarta, Indonesia</p>
+                </div>
+              </div>
             </div>
+
+            {/* Contact Form */}
+            <form
+              action="https://formsubmit.co/fahrezyromeropurba@gmail.com"
+              method="POST"
+              autoComplete="off"
+              className="rounded-2xl bg-[#141414] border border-[#C68B59]/20 p-8 lg:p-10"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <div className="flex flex-col gap-6">
+                <div>
+                  <label className="block mb-2 font-medium">Full Name</label>
+
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="John Doe"
+                    required
+                    className="w-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none transition-all duration-300 focus:border-[#D4A373] focus:ring-1 focus:ring-[#D4A373]"
+                  />
+                </div>
+
+                <div>
+                  <label className="block mb-2 font-medium">Email</label>
+
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="john@example.com"
+                    required
+                    className="w-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none transition-all duration-300 focus:border-[#D4A373] focus:ring-1 focus:ring-[#D4A373]"
+                  />
+                </div>
+
+                <div>
+                  <label className="block mb-2 font-medium">Message</label>
+
+                  <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Tell me about your project..."
+                    required
+                    className="w-full rounded-lg border border-[#C68B59]/20 bg-[#1A1A1A] px-4 py-3 outline-none resize-none transition-all duration-300 focus:border-[#D4A373] focus:ring-1 focus:ring-[#D4A373]"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="mt-2 w-full rounded-full border border-[#C68B59]/30 bg-[#111111] py-4 transition-all duration-300 hover:scale-[1.02] hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)] active:scale-95"
+                >
+                  <ShinyText text="Send Message" speed={3} />
+                </button>
+              </div>
+            </form>
           </div>
         </div>
-        {/* Kontak */}
       </main>
 
       <ProjectModal
