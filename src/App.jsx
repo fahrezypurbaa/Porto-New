@@ -130,7 +130,12 @@ function App() {
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
-              onContactClick={() => console.log("Contact clicked")}
+              onContactClick={() =>
+                window.open(
+                  "https://wa.me/6281268044470?text=Hi%20Fahrezy,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
+                  "_blank",
+                )
+              }
             />
           </div>
         </div>
