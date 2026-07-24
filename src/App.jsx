@@ -145,7 +145,7 @@ function App() {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            <div className="basis-full md:basis-7/12 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-[#C68B59]/30 hover:border-[#D4A373] hover:shadow-[0_0_25px_rgba(198,139,89,0.25)]">
+            <div className="basis-full md:basis-7/12 pr-0 md:pr-8 border-b md:border-b-0 md:border-r border-[#C68B59]/30">
               {/* Kolom kiri */}
               <div className="flex-1 text-left">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
@@ -160,29 +160,30 @@ function App() {
                   className="text-base md:text-lg leading-relaxed mb-10 text-gray-300"
                 />
 
-                <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
-                  <div>
-                    <h1 className="text-3xl md:text-4xl mb-1">
+                <div className="grid grid-cols-3 gap-10 mt-8">
+                  <div className="flex flex-col items-start">
+                    <h2 className="text-3xl font-bold leading-none">
                       4<span className="text-[#C68B59]">+</span>
-                    </h1>
-                    <p>Project Finished</p>
+                    </h2>
+                    <span className="mt-3 text-base text-zinc-300">
+                      Project Finished
+                    </span>
                   </div>
-                  <div>
-                    <h1 className="text-3xl md:text-4xl mb-1">
+
+                  <div className="flex flex-col items-start">
+                    <h2 className="text-3xl font-bold leading-none">
                       1<span className="text-[#C68B59]">+</span>
-                    </h1>
-                    <p>Years of Experience</p>
+                    </h2>
+                    <span className="mt-3 text-base text-zinc-300">
+                      Years of Experience
+                    </span>
                   </div>
-                  <div
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="600"
-                    data-aos-once="true"
-                  >
-                    <h1 className="text-3xl md:text-4xl mb-1">
+
+                  <div className="flex flex-col items-start">
+                    <h2 className="text-3xl font-bold leading-none">
                       3.66<span className="text-[#C68B59]">/4.00</span>
-                    </h1>
-                    <p>GPA</p>
+                    </h2>
+                    <span className="mt-3 text-base text-zinc-300">GPA</span>
                   </div>
                 </div>
 
