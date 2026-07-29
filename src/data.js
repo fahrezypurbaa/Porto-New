@@ -26,7 +26,6 @@ import Tools17 from "/assets/tools/php.png";
 import Tools18 from "/assets/tools/vite.png";
 import Tools19 from "/assets/tools/mysql.png";
 
-
 export const listTools = [
   {
     id: 1,
@@ -149,18 +148,18 @@ export const listProyek = [
     url: "https://intansafetyk3.com",
     dad: "200",
   },
-  
+
   {
     id: 3,
     image: Proyek3,
-    title: "RFurniture Company Profile",
+    title: "ARSA Training & Consulting Website",
     subtitle:
-      "Modern company profile website showcasing products and business information.",
+      "Corporate website for a K3 training and certification provider with program catalog, online registration, and company information.",
     fullDescription:
-      "Built a responsive website for RFurniture with an emphasis on product presentation, company branding, and user experience across desktop and mobile devices.",
-    borderColor: "#8B6B3D",
-    gradient: "linear-gradient(145deg,#8B6B3D,#000)",
-    url: "https://github.com/fahrezypurbaa/rfurniture",
+      "Developed and maintained the official website for ARSA Training & Consulting. The platform provides K3 training information, certification programs, training schedules, online registration, articles, and company profiles. Focused on building responsive interfaces, improving user experience, and ensuring the website remained easy to manage and accessible across desktop and mobile devices.",
+    borderColor: "#0F4C81",
+    gradient: "linear-gradient(145deg,#0F4C81,#000)",
+    url: "https://arsatraining.com",
     dad: "300",
   },
   {
@@ -177,14 +176,11 @@ export const listProyek = [
     dad: "400",
   },
 
-
-  
   {
     id: 5,
     image: Proyek5,
     title: "Tech Terrarium E-Commerce Website",
-    subtitle:
-      "Interactive portfolio featuring laravel and tailwind css.",
+    subtitle: "Interactive portfolio featuring laravel and tailwind css.",
     fullDescription:
       "A built with Laravel, Tailwind CSS. Features include responsive design, product showcase, and modern UI interactions.",
     borderColor: "#8B6B3D",
@@ -194,15 +190,15 @@ export const listProyek = [
   },
   {
     id: 6,
-    image: Proyek6,
-    title: "Mental Health Sentiment Analysis",
+    image: Proyek3,
+    title: "RFurniture Company Profile",
     subtitle:
-      "Research project using Support Vector Machine and Particle Swarm Optimization.",
+      "Corporate website for a professional K3 training and certification provider.",
     fullDescription:
-      "Final thesis project analyzing sentiment from mental health discussions on social media. Implemented preprocessing, TF-IDF, SVM classification, and PSO optimization to improve classification performance.",
+      "Designed and developed a responsive company profile website featuring training programs, certification services, gallery management, CTA integration, and SEO optimization to strengthen the company's digital presence.",
     borderColor: "#8B6B3D",
     gradient: "linear-gradient(145deg,#8B6B3D,#000)",
-    url: "https://github.com/fahrezypurbaa/Skripsi",
+    url: "https://github.com/fahrezypurbaa/rfurniture",
     dad: "600",
   },
 ];
