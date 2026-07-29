@@ -185,7 +185,7 @@ function App() {
 
                   <div className="flex flex-col items-start">
                     <h2 className="text-3xl font-bold leading-none">
-                      3.66<span className="text-[#C68B59]">/4.00</span>
+                      3.68<span className="text-[#C68B59]">/4.00</span>
                     </h2>
                     <span className="mt-3 text-base text-zinc-300">GPA</span>
                   </div>
