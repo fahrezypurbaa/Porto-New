@@ -157,8 +157,8 @@ export const listProyek = [
       "Corporate website for a K3 training and certification provider with program catalog, online registration, and company information.",
     fullDescription:
       "Developed and maintained the official website for ARSA Training & Consulting. The platform provides K3 training information, certification programs, training schedules, online registration, articles, and company profiles. Focused on building responsive interfaces, improving user experience, and ensuring the website remained easy to manage and accessible across desktop and mobile devices.",
-    borderColor: "#0F4C81",
-    gradient: "linear-gradient(145deg,#0F4C81,#000)",
+    borderColor: "#8B6B3D",
+    gradient: "linear-gradient(145deg,#8B6B3D,#000)",
     url: "https://arsatraining.com",
     dad: "300",
   },
@@ -190,7 +190,7 @@ export const listProyek = [
   },
   {
     id: 6,
-    image: Proyek3,
+    image: Proyek6,
     title: "RFurniture Company Profile",
     subtitle:
       "Corporate website for a professional K3 training and certification provider.",

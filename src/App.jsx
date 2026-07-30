@@ -89,7 +89,7 @@ function App() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="max-w-xl text-lg leading-8 text-zinc-300 mb-8"
+              className="max-w-xl text-lg leading-7 sm:leading-8 text-zinc-300 mb-8"
             />
             <div className="flex flex-wrap items-center gap-4">
               <a
@@ -164,7 +164,7 @@ function App() {
                   className="text-base md:text-lg leading-relaxed mb-10 text-gray-300"
                 />
 
-                <div className="grid grid-cols-3 gap-10 mt-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
                   <div className="flex flex-col items-start">
                     <h2 className="text-3xl font-bold leading-none">
                       4<span className="text-[#C68B59]">+</span>
@@ -184,7 +184,7 @@ function App() {
                   </div>
 
                   <div className="flex flex-col items-start">
-                    <h2 className="text-3xl font-bold leading-none">
+                    <h2 className="text-2xl sm:text-3xl font-bold leading-none break-words">
                       3.68<span className="text-[#C68B59]">/4.00</span>
                     </h2>
                     <span className="mt-3 text-base text-zinc-300">GPA</span>
@@ -201,7 +201,7 @@ function App() {
             </div>
 
             {/* Kolom kanan */}
-            <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center ">
+            <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center select-none touch-none ">
               <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
             </div>
           </div>
@@ -336,7 +336,7 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             {/* Left Card */}
             <div
-              className="rounded-2xl bg-[#141414] border border-[#C68B59]/20 p-8 lg:p-10 h-full"
+              className="rounded-2xl bg-[#141414] border border-[#C68B59]/20 p-6 sm:p-8 lg:p-10 h-full"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-once="true"
@@ -344,49 +344,52 @@ function App() {
               <span className="text-[#C68B59] uppercase tracking-[3px] text-sm font-semibold">
                 CONTACT
               </span>
-
-              <h2 className="text-3xl font-bold mt-4">Get In Touch</h2>
-
+              <h2 className="text-2xl sm:text-3xl font-bold mt-4">
+                Get In Touch
+              </h2>
               <p className="text-zinc-400 leading-8 mt-6">
                 I'm always open to discussing new projects, creative ideas,
                 freelance work, or full-time opportunities. Let's build
                 something meaningful together.
               </p>
-
               <div className="mt-10 space-y-7">
                 <div>
-                  <p className="text-[#C68B59] text-sm uppercase tracking-wider">
+                  <p className="text-[#ffff] text-sm uppercase tracking-wider">
                     Email
                   </p>
-
                   <a
                     href="mailto:fahrezyromeropurba@gmail.com"
-                    className="mt-1 inline-block hover:text-[#D4A373] transition-all duration-300 hover:translate-x-1"
+                    className="group mt-1 inline-block break-all transition-transform duration-300 hover:translate-x-1"
                   >
-                    fahrezyromeropurba@gmail.com
+                    <ShinyText
+                      text="fahrezyromeropurba@gmail.com"
+                      speed={3}
+                      className="text-sm sm:text-base group-hover:text-[#D4A373]"
+                    />
                   </a>
                 </div>
-
                 <div>
-                  <p className="text-[#C68B59] text-sm uppercase tracking-wider">
+                  <p className="text-[#ffff] text-sm uppercase tracking-wider">
                     WhatsApp
                   </p>
-
                   <a
                     href="https://wa.me/6281268044470?text=Hi%20Fahrezy,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-1 inline-block hover:text-[#D4A373] transition-all duration-300 hover:translate-x-1"
+                    className="mt-1 inline-block"
                   >
-                    +62 812-6804-4470
+                    <ShinyText
+                      text="+62 812-6804-4470"
+                      speed={3}
+                      className="hover:text-[#D4A373] transition-colors duration-300"
+                    />
                   </a>
                 </div>
-
                 <div>
-                  <p className="text-[#C68B59] text-sm uppercase tracking-wider">
+                  <p className="text-[#ffff] text-sm uppercase tracking-wider">
                     Location
                   </p>
-                  <p className="mt-1">Yogyakarta, Indonesia</p>
+                  <p className="mt-1 text-[#D4A373]">Yogyakarta, Indonesia</p>
                 </div>
               </div>
             </div>
